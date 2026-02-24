@@ -1,5 +1,5 @@
 
-Assignment: MEAN Stack DevOps Deployment Project for DevOps Internship 
+Assignment: MEAN Stack DevOps Deployment Project for DevOps Internship At Discover Dollar
 
 Overview
 This project demonstrates the end-to-end deployment of a full-stack **MEAN (MongoDB, Express, Angular, Node.js)** application using modern DevOps practices.
