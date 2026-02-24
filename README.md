@@ -5,7 +5,7 @@ Overview
 This project demonstrates the end-to-end deployment of a full-stack **MEAN (MongoDB, Express, Angular, Node.js)** application using modern DevOps practices.
 The application is containerized using Docker, orchestrated using Docker Compose, deployed on AWS EC2, and automated with a CI/CD pipeline using GitHub Actions.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 * **Frontend:** Angular
 * **Backend:** Node.js, Express
@@ -58,7 +58,7 @@ docker-compose up -d --build
 
 ---
 
-### 🔹 3. Access Application
+###  3. Access Application
 
 ```
 http://localhost
@@ -79,7 +79,7 @@ http://localhost
 docker-compose up -d
 ```
 
-### 🔹 Access:
+###  Access:
 
 ```
 http://<EC2-PUBLIC-IP> ## Not provided because I terminate it after using. I am a free-tier user 
@@ -99,3 +99,8 @@ http://<EC2-PUBLIC-IP> ## Not provided because I terminate it after using. I am 
 
 ## Some Screenshots
 
+
+<img width="1470" height="787" alt="Screenshot 2026-02-24 at 14 41 03" src="https://github.com/user-attachments/assets/81dcaf0e-d48c-4be4-add8-e48286a383b4" />
+<img width="1470" height="579" alt="Screenshot 2026-02-24 at 14 41 20" src="https://github.com/user-attachments/assets/21528f92-5ab8-4cfe-9721-b07e9546b097" />
+<img width="1467" height="633" alt="Screenshot 2026-02-24 at 14 49 51" src="https://github.com/user-attachments/assets/1e8be85d-98d6-4c10-b6fc-66f0fb65ad27" />
+<img width="1470" height="807" alt="Screenshot 2026-02-24 at 14 54 49" src="https://github.com/user-attachments/assets/47d63343-c521-4878-a64d-89d1e53671ea" />
