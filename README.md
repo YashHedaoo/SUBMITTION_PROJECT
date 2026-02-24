@@ -1,27 +1,101 @@
-In this DevOps task, you need to build and deploy a full-stack CRUD application using the MEAN stack (MongoDB, Express, Angular 15, and Node.js). The backend will be developed with Node.js and Express to provide REST APIs, connecting to a MongoDB database. The frontend will be an Angular application utilizing HTTPClient for communication.  
 
-The application will manage a collection of tutorials, where each tutorial includes an ID, title, description, and published status. Users will be able to create, retrieve, update, and delete tutorials. Additionally, a search box will allow users to find tutorials by title.
+Assignment: MEAN Stack DevOps Deployment Project for DevOps Internship 
 
-## Project setup
+Overview
+This project demonstrates the end-to-end deployment of a full-stack **MEAN (MongoDB, Express, Angular, Node.js)** application using modern DevOps practices.
+The application is containerized using Docker, orchestrated using Docker Compose, deployed on AWS EC2, and automated with a CI/CD pipeline using GitHub Actions.
 
-### Node.js Server
+## 🛠️ Tech Stack
 
-cd backend
+* **Frontend:** Angular
+* **Backend:** Node.js, Express
+* **Database:** MongoDB
+* **Containerization:** Docker
+* **Orchestration:** Docker Compose
+* **CI/CD:** GitHub Actions
+* **Cloud Platform:** AWS EC2
+* **Web Server:** Nginx
 
-npm install
+##  Architecture
 
-You can update the MongoDB credentials by modifying the `db.config.js` file located in `app/config/`.
+```
+User → Nginx (Port 80)
+        ↓
+Frontend (Angular)
+        ↓
+Backend (Node.js API)
+        ↓
+MongoDB Database
+```
 
-Run `node server.js`
 
-### Angular Client
+##  Features Implemented
 
-cd frontend
+* Dockerized frontend and backend applications
+* Multi-container setup using Docker Compose
+* MongoDB integration using a container
+* Nginx reverse proxy configuration
+* CI/CD pipeline for automated build and deployment
+* Deployment on AWS EC2 instance
+* Auto-deployment using GitHub Actions and SSH
 
-npm install
+##  Setup 
 
-Run `ng serve --port 8081`
+###  1. Clone Repository
 
-You can modify the `src/app/services/tutorial.service.ts` file to adjust how the frontend interacts with the backend.
+```
+git clone [https://github.com/YashHedaoo/<your-repo-name>.git](https://github.com/YashHedaoo/SUBMITTION_PROJECT.git)
+cd SUBMITTION_PROJECT
+```
 
-Navigate to `http://localhost:8081/`
+---
+
+###  2. Run Application Locally
+
+```
+docker-compose up -d --build
+```
+
+---
+
+### 🔹 3. Access Application
+
+```
+http://localhost
+```
+
+---
+
+##  Cloud Deployment (AWS EC2)
+
+###  Steps:
+
+1. Launch an Ubuntu EC2 instance
+2. Install Docker & Docker Compose
+3. Clone repository
+4. Run:
+
+```
+docker-compose up -d
+```
+
+### 🔹 Access:
+
+```
+http://<EC2-PUBLIC-IP> ## Not provided because I terminate it after using. I am a free-tier user 
+```
+
+---
+
+##  CI/CD Pipeline
+
+###  Workflow:
+
+* Triggered on every push to the main branch
+* Builds Docker images
+* Pushes images to Docker Hub![Uploading Screenshot 2026-02-24 at 14.50.42.png…]()
+
+* Connects to
+
+## Some Screenshots
+
